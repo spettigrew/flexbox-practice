@@ -190,9 +190,11 @@ p{
 }
 
 main{
+  display flex: row;
   flex-direction: column;
   width: 100%;
   justify-content: center;
+  padding: 5px;
 }
 
 .first section{
