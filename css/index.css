@@ -128,92 +128,148 @@ table {
   border-spacing: 0;
 }
 /* Coding Starts here */
+/* include Nav, Header, Main (section, article[section tag, used to use div article replaces div], 
+p, images, buttons, etc.) Address then Footer. 
+GLOBAL STYLES*/
 
-container{
-  width: 800px;
-  margin: auto;
+body{
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 0 auto;
 }
  /* NO CSS for head!! */
 
-.body{
-  align-items: center;
-  max-width: 100px;
-  margin: 0 auto;
+nav{
+  display: flex;
+  width: 85%;
+  justify-content: flex-end;
+  font-size: 16px;
   background-color: azure;
 }
 
-.nav{
-  flex-direction: row;
-  justify-content: flex-end;
-  font-size: 20px;
-
-  
+ul{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
 }
-.header{
+header{
+  display: flex;
   max-width: 85%;
-  border: 1 px dashed black;
-  flex-direction: row;
+  border: 1px dashed black;
+  background-color: palevioletred;
 }
 
-.h1{
+header div{
+  width: 50%;
+}
+
+h1{
   font-size: 40px;
+  margin-bottom: 5px;
+}
+
+header p{
+  color: teal;
+  justify-content: flex-end;
+}
+
+header img{
+  outline: 1px solid blueviolet;
+  width: 50%;
+  margin: 10px;
   padding: 5px;
+  background-color: pink;
 }
 
-.p{
+p{
   font-size: 10px;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 10px 0;
+  justify-content: center;
+  border: 2px dashed purple;
 }
 
-.main{
+main{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   width: 100%;
-  border: 1px solid black;
-  background-color: beige;
-}
-
-.section{
-  width: 40%;
-  border: 1px solid blueviolet;
+  justify-content: center;
   padding: 5px;
 }
 
-.article{
-  width: 75%;
-  margin: 10px 0;
-}
-
-.first{
-display: flex;
-flex-direction: column-reverse;
-justify-content: space-between;
-align-items: center;
-padding: 5px;
-background-color: cornflowerblue;
+.first section{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: cornflowerblue;
 }
 
 .first article{
-display: flex;
-background-color: thistle;
+  display: flex;
+  width: 85%;
+  flex-direction: column;
+  background-color: thistle;
+}
+
+.second section{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: cornflowerblue;
+}
+.second article{
+  display: flex;
+  width: 85%;
+  flex-direction: column;
+  background-color: thistle;
 }
 
 .first > :first-child{
-background-color: honeydew;
+  background-color: honeydew;
 }
 
 .first > :last-child{
-background-color: teal;
+  background-color: teal;
 }
 
 .first > :nth-child(2){
-background-color: yellow;
+  background-color: yellow;
 }
 
 .first > :nth-child(3){
-background-color: dodgerblue;
+  background-color: dodgerblue;
 }
 
-.footer{
+.second > :first-child{
+  background-color: purple;
+}
+  
+  .second > :last-child{
+  background-color: gold;
+}
+  .second > :nth-child(2){
+    background-color: lightgreen;
+}
+  
+  .second > :nth-child(3){
+    background-color: mediumslateblue;
+}
+
+div img{
+  outline: 1px solid orange;
+  width: 85%;
+  margin: 10px;
+  padding: 5px;
+  background-color: lightyellow;
+}
+
+footer{
   text-align: center;
+  padding: 5px;
+  margin: 10px 0;
 }
