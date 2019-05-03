@@ -141,7 +141,7 @@ body{
 
 nav{
   display: flex;
-  width: 80%;
+  width: 85%;
   justify-content: flex-end;
   font-size: 16px;
   background-color: azure;
@@ -150,7 +150,7 @@ nav{
 ul{
   width: 30%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 header{
   display: flex;
@@ -184,13 +184,14 @@ header img{
 p{
   font-size: 10px;
   flex-wrap: wrap;
-  padding: 30px;
+  padding: 20px;
+  margin: 10px 0;
   justify-content: center;
   border: 2px dashed purple;
 }
 
 main{
-  display flex: row;
+  display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: center;
@@ -226,7 +227,6 @@ main{
   width: 85%;
   flex-direction: column;
   background-color: thistle;
-
 }
 
 .first > :first-child{
@@ -247,18 +247,18 @@ main{
 
 .second > :first-child{
   background-color: purple;
-  }
+}
   
   .second > :last-child{
   background-color: gold;
-  }
+}
   .second > :nth-child(2){
     background-color: lightgreen;
-  }
+}
   
   .second > :nth-child(3){
     background-color: mediumslateblue;
-  }
+}
 
 div img{
   outline: 1px solid orange;
