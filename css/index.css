@@ -244,6 +244,22 @@ main{
 .first > :nth-child(3){
   background-color: dodgerblue;
 }
+
+.second > :first-child{
+  background-color: purple;
+  }
+  
+  .second > :last-child{
+  background-color: gold;
+  }
+  .second > :nth-child(2){
+    background-color: lightgreen;
+  }
+  
+  .second > :nth-child(3){
+    background-color: mediumslateblue;
+  }
+
 div img{
   outline: 1px solid orange;
   width: 85%;
